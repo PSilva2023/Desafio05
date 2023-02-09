@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    /* Font color */
+    --font-color: #F9F9F9;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(130.02deg, #628E75 0.66%, #1A4855 83.32%);
+    padding-bottom: 80px;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Start */
+
+.container .header {
+    padding-top: 30px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icons {
+    margin-left: 10px;
+    font-size: 25px;
+    color: var(--font-color);
+    border: none;
+    cursor: pointer;
+}
+
+/* Header End */
+
+
+/*Content Text Start */
+
+.container .center {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-text{
+    max-width: 440px;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--font-color);
+    margin: 50px 0px 20px 0px;
+}
+
+h1 {
+    font-size: 68px;
+    font-weight: 900;
+    color: var(--font-color);
+    /* width: 400px; */
+    line-height: 75px;
+    margin-bottom: 35px;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--font-color);
+    /* width: 410px; */
+}
+
+.content-button {
+    display: flex;
+}
+
+.btn {
+    font-size: 18px;
+    font-weight: 500;
+    width: 220px;
+    padding: 10px;
+    color: var(--font-color);
+    background-color: #658E76;
+    text-align: center;
+    margin: 60px 20px 0px 0px;
+    transform: skew(-20deg);
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgba(37, 165, 90, 0.521) ;
+}
+
+.icon-play {
+    font-size: 20px;
+}
+
+.btn span {
+    display: block;
+    transform: skew(20deg);
+}
+
+.button-trailer {
+    background-color: transparent;
+    border: 2px solid #658E76;
+}
+
+
+
+
+
+
+
+
+/* Mobile Start */
+
+@media(max-width: 1300px) {
+    .container .center {
+        /* flex-wrap: wrap-reverse;
+        justify-content: center; */
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .btn.button-trailer {
+        display: none;
+    }
+
+    .content-image img {
+        width: 100%;
+    }
+
+    .content-text {
+        max-width: 100%;
+    }
+}
+
+@media(max-width: 400px) {
+    .content-text h1{
+        font-size: 40px;
+        line-height: 48px;
+    }
+}
+
+/* Mobile End */
